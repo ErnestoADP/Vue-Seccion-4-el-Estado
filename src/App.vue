@@ -1,28 +1,39 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+      <h1>ejemplo de vuex basico</h1>
+
+    <contador></contador>
+   <leerStore></leerStore>
+
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Contador from './components/contador'
+import LeerStore from './components/leerStore'
+
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    Contador,
+    LeerStore,
+    
+
+
+  
   }
 }
+
+
+
+
+
+
+
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+
 </style>
