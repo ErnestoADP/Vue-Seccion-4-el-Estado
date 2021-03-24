@@ -5,7 +5,10 @@ Vue.use(Vuex)
 
 export const store = new Vuex.Store({ //vamos a exportas la constante STORE ya que es la fuente de datos 
     state: {
-        contador: 0
+        contador: 0,
+        //------------//
+        nombre: 'Ernesto',
+        edad: '28'
 
     },
 
@@ -19,6 +22,8 @@ export const store = new Vuex.Store({ //vamos a exportas la constante STORE ya q
     }
 
 })
+
+
 
 store.commit('sumar')
 store.commit('restar')
