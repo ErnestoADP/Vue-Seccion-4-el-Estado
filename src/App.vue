@@ -21,13 +21,34 @@
 
   <p>{{edad}}</p>
 
+
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+
+  <h1>ejemplo getters vuex</h1>
+
+  <usuarios></usuarios>
+
+
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+  <hr>
+
   </div>
 </template>
 
 <script>
 import {mapState} from 'vuex'
+
 import Contador from './components/contador'
 import LeerStore from './components/leerStore'
+import Usuarios from './components/Usuarios'
+
 
 
 
@@ -36,6 +57,8 @@ export default {
   components: {
     Contador,
     LeerStore,
+    Usuarios,
+    
   },
  /* 
   aqui encontramos una forma de llamarlo pero no es la ams recomendada 
@@ -64,7 +87,10 @@ export default {
   }),*/
 
     /**esta es la forma mas indicada */
-  computed:mapState(['nombre','edad'])
+ computed:mapState(['nombre','edad']),
+ 
+
+
 
   }
   
