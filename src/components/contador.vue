@@ -1,6 +1,6 @@
 <template>
     <div>
-        <p>El valor del contador: {{this.$store.state.contador}} </p>
+        <p>El valor del contador: {{contador}} </p>
         <button @click="Sumar">sumar</button>
         <button @click="Restar">restar</button>
 
@@ -9,11 +9,13 @@
 </template>
 
 <script>
-    import {store} from "../store/store"
+import {mapState} from  'vuex'
+  //  import {store} from "../store/store"
 
     export default {
-        name:'contador',
-        store,
+        name: 'contador',
+        computed: mapState(['contador']),
+       // store,
 
         methods:{
             Sumar(){

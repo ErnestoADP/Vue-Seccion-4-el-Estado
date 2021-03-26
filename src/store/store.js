@@ -20,6 +20,11 @@ export const store = new Vuex.Store({ //vamos a exportas la constante STORE ya q
         ]
 
     },
+    mutations: {
+        sumar(state) { state.contador++ },
+
+        restar(state) { state.contador-- }
+    },
 
     getters: {
         listadoactivos: (state) => {
@@ -27,18 +32,11 @@ export const store = new Vuex.Store({ //vamos a exportas la constante STORE ya q
         }
     },
 
-    mutations: {
-        sumar(state) {
-            state.contador++
-        },
-        restar(state) {
-            state.contador--
-        }
-    }
+
 
 })
 
 
 
-store.commit('sumar')
-store.commit('restar')
+//store.commit('sumar')
+//store.commit('restar')
