@@ -39,6 +39,8 @@
   <hr>
   <hr>
 
+  <home></home>
+
   </div>
 </template>
 
@@ -46,6 +48,7 @@
 import {mapState} from 'vuex'
 
 import Contador from './components/contador'
+import Home from './components/Home'
 import LeerStore from './components/leerStore'
 import Usuarios from './components/Usuarios'
 
@@ -58,8 +61,9 @@ export default {
     Contador,
     LeerStore,
     Usuarios,
+    Home,
     
-  },
+    },
  /* 
   aqui encontramos una forma de llamarlo pero no es la ams recomendada 
   ---------------------------------------------------------------------------------------------------------------
